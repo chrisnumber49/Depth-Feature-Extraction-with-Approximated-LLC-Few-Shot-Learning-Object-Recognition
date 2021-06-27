@@ -7,7 +7,7 @@ import cv2
 import numba
 import math
 
-
+ 
 @numba.jit
 def compute_gradient(img):
     gradient_values_x = 0.5*(cv2.Sobel(img, cv2.CV_64F, 1, 0, ksize=1))

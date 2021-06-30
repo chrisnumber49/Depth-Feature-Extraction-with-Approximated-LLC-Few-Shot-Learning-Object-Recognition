@@ -1,12 +1,7 @@
 # 3D_object_recognition
 
 ## Description
-In this Thesis we introduce an image recognition method for the 3D image. 
-The overall shape of an object can be represented as a concatenation of local feature histograms that consist of azimuthal angle and zenith angle with histogram of oriented normal vectors (HONV).
-However, the appearance variation due to the change of viewpoint might cause the reduction of accuracy, to eliminate this constrain, in locality-constrained linear coding (LLC), the local features are projected into its local-coordinate system instead, 
-in Spatial Pyramid Matching (SPM) layer, max pooling is used to integrate projected features in each sub-region to generate the final representation of object.
-Combining all methods above, the classification accuracy in our experiment achieves higher than 81% in grayscale and higher than 92% in depth space with only 30 training samples for each category. 
-For the object detection task, we adopt the segmentation based selective search as the region proposal to avoid the computational waste from the conventional exhaustive search method.
+In this paper we introduce an image recognition method for the 3D image. The overall shape of an object can be represented as a feature which concatenates the local histograms that consist of 2 angles, azimuth and zenith in histogram of oriented normal vectors (HONV). However, the diversity of appearance caused by the change of viewpoint might cause the reduction of accuracy, to eliminate this constrain, in locality-constrained linear coding (LLC), the local features are projected into its local-coordinate system instead, in Spatial Pyramid Matching (SPM) layer, max pooling is adopted to integrate projected features in each sub-region to generate the final representation of object. Combining all methods above, the classification accuracy in our experiment achieves higher than 81% in grayscale and higher than 92% in depth space with only 30 training samples for each category. For the object detection task, we adopt the segmentation based selective search as the region proposal to avoid the computational waste from the conventional exhaustive search method.
 
 ## System Overview
 We firstly apply the HONV on the depth image, the overall shape of an object can be represented as a concatenation of local feature histograms located by grid sampling which consist of azimuthal angle and zenith angle.

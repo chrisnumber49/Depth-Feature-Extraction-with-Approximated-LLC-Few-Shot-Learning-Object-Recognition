@@ -31,3 +31,4 @@ In this experiment, bowl, flashlight and cereal box are selected as the targets 
 The Table shows the comparison of average precision, where Fast R-CNN* means the training samples for each class of the VGG16 model in Fast R-CNN is 500. We can see with only 50 training data, the result of Fast R-CNN with VGG16 model is a complete failure, and even we increase the number of samples tenfold to 500 for the VGG16 model, our proposed methods still outdo the Fast R-CNN by 27.6% of the mean average precision (mAP).
 
 ![image](https://github.com/chrisnumber49/3D_object_recognition/blob/main/Average%20precision.PNG)
+ 

@@ -13,7 +13,7 @@ In SPM layer, we adopt max pooling as the pooling method to integrate codes in e
 For the instance testing, we adopt selective search as the region proposal, different from traditional exhaustive search, it makes the final number of generated proposals way less by grouping adjacent regions based on color, texture, size, and shape.
 The same procedural in the training stage will be applied on each Region of interest (ROI) windows to generate the representation for the independently classification, in one image, the output will contain one or multiple object confidence score of categories with its bounding box.
 
-The system flow chart is shown as the figure.
+The system flow chart is shown as the figure. 
 
 ![image](https://github.com/chrisnumber49/3D_object_recognition/blob/main/System_flow.png)
 
